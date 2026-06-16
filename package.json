@@ -1,16 +1,18 @@
-{
+﻿{
   "name": "screenshot-mcp",
   "version": "1.0.0",
-  "description": "MCP server for window screenshots",
+  "description": "MCP server for Windows screenshots - supports full screen and window capture",
   "main": "dist/index.js",
+  "bin": {
+    "screenshot-mcp": "./cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js",
     "test": "node test-mcp.js",
     "clean": "if exist dist rmdir /s /q dist",
-    "rebuild": "npm run clean && npm run build",
-    "install-and-build": "npm install && npm run build"
+    "rebuild": "npm run clean && npm run build"
   },
   "keywords": [
     "mcp",
@@ -19,7 +21,7 @@
     "ai",
     "tool"
   ],
-  "author": "",
+  "author": "stollor",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
@@ -34,10 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/stollor/screenshot-mcp.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/stollor/screenshot-mcp/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/stollor/screenshot-mcp#readme"
 }
